@@ -1,5 +1,6 @@
 /*Import next Components */
 import Image from 'next/image';
+import Pill from '../Pill/Pill';
 
 export default function HomeAbout({ about }){
     
@@ -13,31 +14,21 @@ export default function HomeAbout({ about }){
                 <p className="font-bold">CEO: {about.ceo}</p>
                 <p className="font-bold">COO: {about.coo}</p>
 
-                <div className="flex justify-center">
+                <div className="flex justify-center  lg: flex-row">
                     <Image className="mr-2" src="/elonMusk.png"  width={105} height={105} alt="CEO Elon Musk"/>
                     <Image className="object-center"  objectFit="fill" src="/GwynneShotwell.png" width={105} height={105} alt="COO Gwynne Shotwell"></Image>
                     
                 </div>
 
-                <div>
-                    <p className="text-center font-bold">Find Space X on social media</p>
+                <div className="mb-4">
+                    <p className="text-center font-bold">Find Space X on social media</p>   
+                </div>
 
-                    
-
-                    <div className="flex mb-2 justify-center">
-                        <span className=" px-2 mr-2 leading-none bg-yellow-700 text-yellow-200 rounded-full uppercase tracking-wide text-xs">
-                            <a href={about.links.elon_twitter} target="_blank" rel="noreferrer">Elon Twitter</a>
-                        </span>
-                        <span className=" px-2 mr-2 leading-none bg-yellow-700 text-yellow-200 rounded-full uppercase tracking-wide text-xs">
-                            <a href={about.links.flickr} target="_blank" rel="noreferrer">Flickr</a>
-                        </span>
-                        <span className=" px-2 mr-2 leading-none bg-yellow-700 text-yellow-200 rounded-full uppercase tracking-wide text-xs">
-                            <a href={about.links.twitter} target="_blank" rel="noreferrer">Twitter</a>
-                        </span>
-                        <span className=" px-2 mr-2 leading-none bg-yellow-700 text-yellow-200 rounded-full uppercase tracking-wide text-xs">
-                            <a href={about.links.website} target="_blank" rel="noreferrer">Website</a>
-                        </span>
-                    </div>
+                <div className="mb-3 flex w-full justify-center">
+                    <Pill social={about.links.elon_twitter} name={"Elon Twitter"}></Pill>
+                    <Pill social={about.links.flickr} name={"Flickr"}></Pill>
+                    <Pill social={about.links.twitter} name={"Twitter"}></Pill>
+                    <Pill social={about.links.website} name={"Website"}></Pill>
                 </div>
            </div>
             
