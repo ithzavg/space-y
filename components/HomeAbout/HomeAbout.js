@@ -11,10 +11,10 @@ export default function HomeAbout({ about }){
                 <p className="mb-3">{about.summary}</p>
 
                 <div>
-                    <Image src="/assets/img/elonMusk.png"  width={100} height={50} alt="CEO Elon Musk"></Image>
+                    <Image src="/assets/img/elonMusk.png"  width={50} height={50} alt="CEO Elon Musk"/>
                     <p>{about.ceo}</p>
 
-                    <Image src="/assets/img/GwynneShotwell.png" width={100} height={50} alt="COO Gwynne Shotwell"></Image>
+                    <Image src="/assets/img/GwynneShotwell.png" width={50} height={50} alt="COO Gwynne Shotwell"></Image>
                     <p>{about.coo}</p>
                 </div>
            </div>
