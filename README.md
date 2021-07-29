@@ -1,34 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+    <a href="https://ibb.co/V953mfV"><img src="https://i.ibb.co/V953mfV/project.png" alt="project" border="0"></a>
+</p>
+<h1 align="center">Space-Y</h1>
 
-## Getting Started
+Welcome to space-y.
+This is a responsive application where you can see the past launches of the space x company
+Click in the link below and give an eye on the app.
 
-First, run the development server:
+## 🚀 Deploy
+I used vercel to deploy this app
+
+➡️ [space-y](https://space-y-ithzavg.vercel.app/ "space-y") ⬅️
+
+## 🚀 Language and tools
+<p align="center">
+   <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/> <img alt="Apollo-GraphQL" src="https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql"/>
+   <img alt="Tailwind" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"/> <img alt="Next" src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"/>
+   <img alt="Vercel" src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white">
+</p>
+
+## 🚀 Analysis
+
+**Problem**: Create a responsive app and show information about space x launches.
+
+**Problem Analysis**: 
+- Design an app
+- Create graphql queries
+- Integrate nextjs, tailwind and apollo client
+- Create reusable components as cards, pills and navbar
+- Data:
+    - Mission name
+    - Flickr image
+    - Date 
+    - Wikipedia article
+    - Name of the company
+    - Summary
+    - Social media
+
+## 🚀 Design and inspiration
+I took the inspiration for the design searching in dribbble, pinterest and some galaxy images.
+You can checkout the creative process in the figma below
+
+▶️ [Figma Design](https://www.figma.com/file/AAplNejvnpJtxjO8gOwtoG/space-y?node-id=0%3A1 "Figma Design") ◀️
+
+<img src="https://i.ibb.co/bW9wSTv/home.png" alt="home">
+
+<img src="https://i.ibb.co/2nfrQJ0/home-resp.png" alt="home-resp">
+
+<img src="https://i.ibb.co/P6GrtkS/launches.png" alt="launches">
+
+<img src="https://i.ibb.co/b7ZWRZB/launches-resp.png" alt="launches-resp">
+
+## 🚀 Key Features
+- Get launches
+- Wikipedia Articles
+- Social media information
+- Graphql integration
+- Nextjs integration
+- Tailwindcss integration
+
+## 🚀 How to use
+To clone and run this application, you'll need [Git](https://git-scm.com) and Yarn  installed on your computer. From your command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone this repository
+$ git clone https://github.com/ithzavg/space-y.git
+
+# Go into the repository
+$ cd space-y
+
+# Install dependencies
+$ yarn install
+
+# Run the app
+$ yarn start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Credits
+**Ithzamary Vilchis García - Frontend developer**
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+**GraphQL API**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+https://api.spacex.land/graphql/
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🚀 License
+MIT
